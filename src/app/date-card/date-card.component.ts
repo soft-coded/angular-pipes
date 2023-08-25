@@ -10,9 +10,7 @@ export class DateCardComponent implements OnInit, OnDestroy {
   private dateInterval: ReturnType<typeof setInterval> | null = null;
 
   ngOnInit(): void {
-    this.dateInterval = setInterval(() => {
-      this.date = new Date();
-    }, 1000);
+    this.dateInterval = setInterval(() => (this.date = new Date()), 1000);
   }
 
   ngOnDestroy(): void {
