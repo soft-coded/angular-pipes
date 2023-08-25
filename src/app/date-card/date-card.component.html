@@ -1,1 +1,12 @@
-<p>date-card works!</p>
+<div class="card-wrapper">
+  <div class="card-container">
+    <header>
+      <h2>{{ date | date : "mediumTime" }}</h2>
+    </header>
+    <hr />
+    <footer>
+      <h4 class="day">{{ date | date : "EEEE" }}</h4>
+      <h4>{{ date | date : "dd/MM/yyyy" }}</h4>
+    </footer>
+  </div>
+</div>

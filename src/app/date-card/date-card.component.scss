@@ -1,0 +1,50 @@
+$border-color: rgb(147, 147, 147);
+
+.card-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  background-color: rgb(246, 246, 246);
+  padding: var(--spacing-xxl);
+  border: 1px solid $border-color;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 0 30px rgb(202, 202, 202);
+
+  hr {
+    color: transparent;
+    border-color: $border-color;
+  }
+
+  h2,
+  h4 {
+    font-weight: 600;
+    color: rgb(81, 81, 81);
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    display: flex;
+    gap: var(--spacing-mid);
+
+    .day {
+      border-right: 2px solid $border-color;
+      padding-right: var(--spacing-mid);
+    }
+  }
+}
